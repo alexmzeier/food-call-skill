@@ -32,7 +32,7 @@ def skill_api(identifier: str, api_key: str, text: str):
         'utterance': text
     }
     #response = requests.get(url=skill.auth_skill_url, params=payload, json=dataRequest)
-    response = requests.post(url="http://80.158.34.90:8005/api/skill/food-call", params=payload)
+    response = requests.post(url="http://85.215.193.214:8001/api/skill/food-call", params=payload)
     print("request status code " + str(response.status_code))
     print('skills ' + str(response.text))
         
